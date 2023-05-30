@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/chart.css">
+    <title>My Expense App</title>
+</head>
+
+<body>
+    <nav>
+        <div class="left-section">
+            <img class="menu-icon" src="imgs/menu.png" alt="menu-image">
+            <!-- <p class="month-date">March, 2024</p>
+            <img class="calendar-icon" src="imgs/calendar.png" alt="calendar-icon"> -->
+            <input class="date-picker" type="week" value="2023-W01">
+        </div>
+        <div class="middle-section">
+            <p class="title-input">My Expense App</p>
+            <!-- <img class="edit-icon" src="imgs/edit.png" alt="edit-icon"> -->
+        </div>
+        <div class="right-section">
+            <button class="add-expense-button">Add Expense</button>
+            <div class="profile">
+                <img class="profile-picture" src="imgs/my-photo.png" alt="my-channel-picture">
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="left-container">
+            <header>
+                <P class="intro-text">Take control of your finances with our <br>intuitive expense management
+                    app.<br>Use my
+                    expense app to
+                    <span id="typing-text">ADD</span>
+                </P>
+                <div class="card-container">
+                    <div id="card-1">
+                        <img class="card-image" src="imgs/simple.png">
+                        <p></p>
+                    </div>
+                    <div id="card-2">
+                        <img class="card-image" src="imgs/budget.png">
+                        <p></p>
+                    </div>
+                    <div id="card-3">
+                        <img class="card-image" src="imgs/bar-chart.png">
+                        <p></p>
+                    </div>
+                </div>
+
+                <button class="start-button" onclick="window.location.href='expense-page.html'">Get Started</button>
+            </header>
+        </div>
+        <div class="right-container">
+            <div class="illustration">
+                <img class="illustration-image" src="imgs/illustrate-image.png" alt="illustrate-image">
+                <!-- Image by storyset on Freepik -->
+            </div>
+        </div>
+        <!-- <section class="chart-section">
+        
+        </section> -->
+    </main>
+    <script src="javascript/homepage.js"></script>
+</body>
+
+</html>

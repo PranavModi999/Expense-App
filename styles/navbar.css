@@ -1,0 +1,118 @@
+nav {
+    height: 80px;
+    /* background-color: #ff5a5f; */
+    display: grid;
+    grid-template-columns: 240px 1fr 240px;
+    /* box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.150); */
+    border-radius: 0px 0px 8px 8px;
+
+}
+
+.left-section {
+    display: flex;
+    color: #e3e7d3;
+    justify-content: start;
+    align-items: center;
+    padding-left: 12px;
+    column-gap: 20px;
+}
+
+.middle-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    /* padding-top: 10px; */
+    align-items: center;
+    column-gap: 10px;
+    min-width: 280px;
+    /* font-style: italic; */
+}
+
+.title-input {
+    color: #ff5a5f;
+    border: none;
+    background-color: #1a1d1a;
+    text-decoration: underline;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.right-section {
+    /* background-color: lightblue; */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    column-gap: 20px;
+    padding-right: 12px;
+}
+
+.profile-picture {
+    position: relative;
+    border-radius: 24px;
+    height: 40px;
+}
+
+
+.menu-icon,
+.back-icon {
+    display: inline-block;
+    color: #e3e7d3;
+    height: 28px;
+    cursor: pointer;
+    padding: 4px 6px;
+    border-radius: 14px;
+}
+
+.middle-section p {
+    display: inline-block;
+}
+
+.middle-section .edit-icon {
+    padding: 4px 6px;
+    border-radius: 40px;
+    display: inline-block;
+    position: relative;
+    height: 28px;
+    cursor: pointer;
+}
+
+.edit-icon:hover,
+.date-picker:hover,
+.menu-icon:hover,
+.back-icon:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.date-picker {
+    background-color: #1a1d1a;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 12px;
+    padding: 2px 12px;
+}
+
+.date-picker::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    cursor: pointer;
+    height: 24px;
+    width: 24px;
+}
+
+.add-expense-button {
+    font-weight: 700;
+    padding: 6px 10px;
+    background-color: #ff5a5f;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    box-shadow: inset -5px -5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.add-expense-button:hover {
+    opacity: 0.7;
+}
+
+.add-expense-button:active {
+    opacity: 0.5;
+}

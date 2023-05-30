@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/expense.css">
+    <link rel="stylesheet" href="styles/table.css">
+    <link rel="stylesheet" href="styles/chart.css">
+
+    <title>My expense app</title>
+</head>
+
+<body>
+    <nav>
+        <div class="left-section">
+            <img class="back-icon" src="imgs/arrow_back.png" alt="back-image" onclick="history.back()">
+            <!-- <p class="month-date">March, 2024</p>
+            <img class="calendar-icon" src="imgs/calendar.png" alt="calendar-icon"> -->
+            <input class="date-picker" type="week" value="2023-W01">
+        </div>
+        <div class="middle-section">
+            <p class="title-input">My Expense App</p>
+            <!-- <img class="edit-icon" src="imgs/edit.png" alt="edit-icon"> -->
+        </div>
+        <div class="right-section">
+            <div class="profile">
+                <img class="profile-picture" src="imgs/my-photo.png" alt="my-channel-picture">
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="select-action-section">
+            <p class="subtitle-text"><span class="red-text">Create</span> A new Expense</p>
+            <button class="add-button">ADD</button>
+
+            <p class="subtitle-text"><span class="red-text">View</span> weekly Expenses</p>
+            <button class="view-button">View</button>
+
+            <p class="subtitle-text"><span class="red-text">Delete</span> An Useless Expense</p>
+            <button class="delete-button">Delete</button>
+
+
+        </section>
+        <section class="add-form">
+            <form class="add-form">
+                <P class="add-title-text">Create A New <span>Expense!</span></P>
+                <label id="title-text" for="title">Title:</label>
+                <input type="text" id="title" name="title" placeholder="Enter title"><br><br>
+
+                <label id="date-text" for="date">Date:</label>
+                <input type="date" id="date" name="date"><br><br>
+
+                <div class="range-slider">
+                    <label id="value-text" for="value">Value:</label>
+                    <input type="range" id="value" name="value" min="0" max="1000" step="1"><br>
+                    <p id="slider-current-value">500</p>
+                </div>
+
+                <input type="button" class="cancel-button" value="cancel">
+                <input type="submit" class="submit-button">
+            </form>
+        </section>
+        <section class="delete-list">
+            <p class="delete-title-text">Delete<span> Multiple</span> Items!</p>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Date</th>
+                        <th>Value</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="list-view">
+                    <!-- Items added here by js method -->
+                </tbody>
+            </table>
+            <input type="button" id="delete-cancel-button" value="cancel">
+
+        </section>
+        <section class="view-list">
+            <p class="view-title-text"><span>View</span> all the items!</p>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Expense</th>
+                    </tr>
+
+                </thead>
+                <tbody id="list-view">
+                    <tr>
+                        <td>monday</td>
+                        <td id="monday-value">0</td>
+                    </tr>
+                    <tr>
+                        <td>tuesday</td>
+                        <td id="tuesday-value">0</td>
+                    </tr>
+                    <tr>
+                        <td>wednesday</td>
+                        <td id="wednesday-value">0</td>
+                    </tr>
+                    <tr>
+                        <td>thursday</td>
+                        <td id="thursday-value">0</td>
+                    </tr>
+                    <tr>
+                        <td>friday</td>
+                        <td id="friday-value">0</td>
+                    </tr>
+                    <tr>
+                        <td>saturday</td>
+                        <td id="saturday-value">0</td>
+                    </tr>
+                    <tr>
+                        <td>sunday</td>
+                        <td id="sunday-value">0</td>
+                    </tr>
+                </tbody>
+            </table>
+            <input type="button" id="view-cancel-button" value="cancel">
+        </section>
+        <section class="chart-area">
+
+            <div class="chart-background">
+                <p class="chart-title">Weekly Budget Bar Chart:</p>
+                <div class="horizontal-line"></div>
+                <div class="vertical-line"></div>
+                <div class="monday-bar"></div>
+                <div class="tuesday-bar"></div>
+                <div class="wednesday-bar"></div>
+                <div class="thursday-bar"></div>
+                <div class="friday-bar"></div>
+                <div class="saturday-bar"></div>
+                <div class="sunday-bar"></div>
+                <div class="x-axis-elements">
+
+                    <p class="monday">monday</p>
+                    <p class="tuesday">tuesday</p>
+                    <p class="wednesday">wednesday</p>
+                    <p class="thrusday">thrusday</p>
+                    <p class="friday">friday</p>
+                    <p class="saturday">saturday</p>
+                    <p class="sunday">sunday</p>
+                </div>
+                <div class="y-axis-elements">
+                    <p class="amount-0">0</p>
+                    <p class="amount-250">250</p>
+                    <p class="amount-500">500</p>
+                    <p class="amount-750">750</p>
+                    <p class="amount-1000">1000</p>
+                </div>
+            </div>
+            <div class="statastics">
+                <p class="statastics-title">Weekly Stastastics</p>
+                <p>Total Expense:<span id="total">750</span></p>
+                <p>Average Daily:<span id="average">75</span></p>
+                <p>Highest Expense:<span id="highest">400</span></p>
+                <p>Lowest Expense:<span id="lowest">23</span></p>
+                <p>Last Updated:<span id="lastUpdate">12th March</span></p>
+
+            </div>
+        </section>
+    </main>
+    <script src="javascript/expense_page.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</body>
+
+</html>
