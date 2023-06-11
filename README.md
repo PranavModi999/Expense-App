@@ -12,4 +12,4 @@ Welcome to the Expense App, a simple and intuitive static website built with HTM
 
 ## Demo 🌐
 
-Curious to see the Expense App in action? Check out the live demo on [GitHub Pages](https://pranavmodi999.github.io/Expense-App/expense_page.html)!
+Curious to see the Expense App in action? Check out the live demo on [GitHub Pages](https://pranavmodi999.github.io/Expense-App/)!
