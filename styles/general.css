@@ -122,24 +122,13 @@ main {
     height: 40px;
 }
 
-.right-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .illustration-image {
     border-radius: 12px;
     /* border: 2px solid #fc6d6d; */
     height: 380px;
+    object-fit: contain;
 }
 
 .illustration-image:hover {
     opacity: 0.8;
-}
-
-@media (max-width:750px) {
-    .illustration-image {
-        opacity: 0;
-    }
 }
