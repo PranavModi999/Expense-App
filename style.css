@@ -1,0 +1,602 @@
+.chart-background {
+  position: relative;
+  background-color: blanchedalmond;
+  height: 400px;
+  width: 700px;
+  border-radius: 12px;
+  opacity: 0.7;
+  color: #fc6d6d;
+}
+
+.chart-title {
+  color: black;
+  padding: 12px 12px;
+  font-size: 24px;
+  border-bottom: 2px solid black;
+}
+
+.horizontal-line {
+  position: absolute;
+  bottom: 60px;
+  left: 40px;
+  background-color: black;
+  height: 3px;
+  width: 90%;
+}
+
+.vertical-line {
+  position: absolute;
+  bottom: 60px;
+  left: 40px;
+  background-color: black;
+  height: 65%;
+  width: 3px;
+}
+
+.x-axis-elements p {
+  position: absolute;
+  display: inline-block;
+  bottom: 20px;
+}
+
+.monday {
+  left: 60px;
+}
+
+.tuesday {
+  left: 140px;
+}
+
+.wednesday {
+  left: 230px;
+}
+
+.thrusday {
+  left: 320px;
+}
+
+.friday {
+  left: 400px;
+}
+
+.saturday {
+  left: 490px;
+}
+
+.sunday {
+  left: 580px;
+}
+
+.y-axis-elements p {
+  position: absolute;
+  display: inline-block;
+  right: 665px;
+}
+
+.amount-0 {
+  bottom: 40px;
+}
+
+.amount-250 {
+  bottom: 100px;
+}
+
+.amount-500 {
+  bottom: 160px;
+}
+
+.amount-750 {
+  bottom: 220px;
+}
+
+.amount-1000 {
+  bottom: 280px;
+}
+
+.monday-bar {
+  position: absolute;
+  background-color: black;
+  width: 40px;
+  left: 70px;
+  bottom: 60px;
+}
+
+.tuesday-bar {
+  position: absolute;
+  background-color: black;
+  width: 40px;
+  left: 150px;
+  bottom: 60px;
+}
+
+.wednesday-bar {
+  position: absolute;
+  background-color: black;
+  width: 40px;
+  left: 240px;
+  bottom: 60px;
+}
+
+.thursday-bar {
+  position: absolute;
+  background-color: black;
+  width: 40px;
+  left: 330px;
+  bottom: 60px;
+}
+
+.friday-bar {
+  position: absolute;
+  background-color: black;
+  width: 40px;
+  left: 420px;
+  bottom: 60px;
+}
+
+.saturday-bar {
+  position: absolute;
+  background-color: black;
+  width: 40px;
+  left: 500px;
+  bottom: 60px;
+}
+
+.sunday-bar {
+  position: absolute;
+  background-color: black;
+  width: 40px;
+  left: 580px;
+  bottom: 60px;
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.select-action-section,
+.add-form {
+  padding-top: 40px;
+  text-align: center;
+  flex: 1;
+}
+
+.add-title-text,
+.delete-title-text,
+.view-title-text {
+  font-size: 28px;
+  margin: 18px;
+  color: white;
+}
+
+.delete-title-text,
+.view-title-text {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.add-title-text span,
+.delete-title-text span,
+.view-title-text span {
+  color: #ff5a5f;
+  text-decoration: underline;
+}
+
+#title-text,
+#date-text,
+#value-text {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+#title,
+#date {
+  background-color: #1a1d1a;
+  border: 1px solid #ff5a5f;
+  color: white;
+  border-radius: 12px;
+  font-size: 20px;
+  padding: 6px 12px;
+  margin: 12px 12px;
+}
+
+#date::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  cursor: pointer;
+  height: 24px;
+  width: 24px;
+}
+
+.range-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.range-slider p {
+  margin: 0;
+}
+
+#value {
+  -webkit-appearance: none;
+  background: #ff5a5f;
+  height: 7px;
+  width: 200px;
+  border-radius: 40px;
+  margin: 10px;
+}
+
+#value::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: white;
+  border-radius: 40px;
+  height: 20px;
+  width: 20px;
+}
+
+.chart-area {
+  flex: 1;
+}
+
+.red-text {
+  color: #ff5a5f;
+}
+
+.subtitle-text {
+  font-size: 28px;
+  color: white;
+}
+
+.add-button,
+.view-button,
+.delete-button,
+.cancel-button,
+.submit-button,
+#delete-cancel-button,
+#view-cancel-button {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 8px 16px;
+  background-color: #ff5a5f;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  box-shadow: inset -5px -5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.cancel-button {
+  margin: 20px;
+}
+
+#delete-cancel-button,
+#view-cancel-button {
+  margin-top: 40px;
+}
+
+.add-button:hover,
+.view-button:hover,
+.delete-button:hover,
+.cancel-button:hover,
+.submit-button:hover,
+#delete-cancel-button:hover,
+#view-cancel-button:hover {
+  color: white;
+  border: 2px solid #ff5a5f;
+  background-color: #1a1d1a;
+}
+
+.add-button:active,
+.view-button:active,
+.delete-button:active,
+.cancel-button:active,
+.submit-button:active,
+#delete-cancel-button:active,
+#view-cancel-button:active {
+  opacity: 0.5;
+}
+
+.delete-list,
+.view-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.delete-icon {
+  height: 24px;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 24px;
+}
+
+.delete-icon:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.statastics {
+  width: 86%;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border: 2px solid #ff5a5f;
+  border-radius: 12px;
+  margin: 20px 10px;
+  padding: 6px 12px;
+}
+
+.statastics p {
+  color: white;
+}
+
+.statastics-title {
+  font-size: 24px;
+  text-align: center;
+  grid-column: span 3;
+  line-height: 24px;
+  border-bottom: 2px solid gray;
+}
+body {
+  padding: 0;
+  background-color: #1a1d1a;
+  margin: 0;
+  font-family: Fira Sans, Arial;
+  color: white;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px;
+}
+
+.intro-text {
+  color: white;
+  font-size: 36px;
+}
+
+.intro-text span {
+  color: #fc6d6d;
+  position: relative;
+}
+
+.intro-text span::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  background: #1a1d1a;
+  border-left: 2px solid #fc6d6d;
+  animation: typing 1.5s steps(10) infinite;
+}
+
+@keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0 -35px 0 35px;
+  }
+}
+
+.start-button {
+  color: white;
+  font-size: 24px;
+  border-radius: 8px;
+  padding: 8px 14px;
+  margin-top: 20px;
+  margin-left: 12px;
+  background-color: #1a1d1a;
+  border: 2px solid #fc6d6d;
+  cursor: pointer;
+}
+
+.start-button:hover {
+  background-color: #fc6d6d;
+}
+
+.start-button:active {
+  opacity: 0.5;
+}
+
+.card-container {
+  display: flex;
+}
+
+#card-1,
+#card-2,
+#card-3 {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  border-radius: 12px;
+  background-color: #fc6d6d;
+  padding: 4px;
+  height: 260px;
+  width: 150px;
+  margin: 20px;
+}
+
+#card-1:hover,
+#card-2:hover,
+#card-3:hover {
+  background-color: #1a1d1a;
+  border: 2px solid #fc6d6d;
+}
+
+#card-1 p::after {
+  content: "Simplify your expense";
+}
+
+#card-1:hover p:after {
+  font-size: 12px;
+  color: white;
+  content: "Keep track of all your expenses in one place and easily categorize them so you can see where your money is going";
+}
+
+#card-2 p::after {
+  content: "Stay on top of your budget";
+}
+
+#card-2:hover p:after {
+  font-size: 12px;
+  color: white;
+  content: "Set budgets for different categories and get alerts when youre getting close to your limit";
+}
+
+#card-3 p::after {
+  content: "Visualize your spending";
+}
+
+#card-3:hover p:after {
+  font-size: 12px;
+  color: white;
+  content: "Our app makes it easy to see your spending patterns with interactive charts and graphs.";
+}
+
+.card-image {
+  height: 40px;
+}
+
+.illustration-image {
+  border-radius: 12px;
+  /* border: 2px solid #fc6d6d; */
+  height: 380px;
+  object-fit: contain;
+}
+
+.illustration-image:hover {
+  opacity: 0.8;
+}
+nav {
+  height: 80px;
+  /* background-color: #1a1d1a !important; */
+  display: grid;
+  grid-template-columns: 240px 1fr 240px;
+  /* box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.150); */
+  border-radius: 0px 0px 8px 8px;
+}
+
+.title-input {
+  color: #ff5a5f;
+  border: none;
+  background-color: #1a1d1a;
+  text-decoration: underline;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.profile-picture {
+  position: relative;
+  border-radius: 24px;
+  height: 40px;
+}
+
+.menu-icon,
+.back-icon {
+  display: inline-block;
+  color: #e3e7d3;
+  height: 28px;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 14px;
+}
+
+.middle-section p {
+  display: inline-block;
+}
+
+.middle-section .edit-icon {
+  padding: 4px 6px;
+  border-radius: 40px;
+  display: inline-block;
+  position: relative;
+  height: 28px;
+  cursor: pointer;
+}
+
+.edit-icon:hover,
+.date-picker:hover,
+.menu-icon:hover,
+.back-icon:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.date-picker {
+  background-color: #1a1d1a;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 12px;
+  padding: 2px 12px;
+}
+
+.date-picker::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  cursor: pointer;
+  height: 24px;
+  width: 24px;
+}
+
+.add-expense-button {
+  font-weight: 700;
+  padding: 6px 10px;
+  background-color: #ff5a5f;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  box-shadow: inset -5px -5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.add-expense-button:hover {
+  opacity: 0.7;
+}
+
+.add-expense-button:active {
+  opacity: 0.5;
+}
+/* Style the table */
+.table {
+  width: 80%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-left: 40px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.table thead th {
+  background-color: #1a1d1a;
+  color: #fff;
+  font-weight: 600;
+  text-align: left;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.table tbody tr {
+  background-color: #fff;
+  color: #1a1d1a;
+  border: 1px solid #ddd;
+  transition: background-color 0.3s ease;
+}
+
+.table tbody tr:hover {
+  background-color: #ff5a5f;
+  color: #fff;
+}
+
+.table tbody td {
+  padding: 10px;
+  text-align: left;
+}
+
+.table tbody td.date {
+  font-family: monospace;
+}
+
+.table tbody td.value {
+  font-weight: 600;
+}

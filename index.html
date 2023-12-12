@@ -1,77 +1,91 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Bootstrap CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles/navbar.css">
-    <link rel="stylesheet" href="styles/general.css">
-    <link rel="stylesheet" href="styles/chart.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
     <title>My Expense App</title>
-</head>
+  </head>
 
-<body class="container-fluid">
+  <body class="container-fluid">
     <nav class="row">
-        <div class="col-3 d-flex align-items-center justify-content-center p-3">
-            <a class="nav-link me-3" href="#">Home</a>
-            <a class="nav-link me-3" href="#">Home</a>
-            <a class="nav-link me-3" href="#">Home</a>
-            <a class="nav-link me-3" href="#">Home</a>
+      <div class="col-3 d-flex align-items-center justify-content-center p-3">
+        <a class="nav-link me-3" href="#">Home</a>
+        <a class="nav-link me-3" href="#">Home</a>
+        <a class="nav-link me-3" href="#">Home</a>
+        <a class="nav-link me-3" href="#">Home</a>
+      </div>
+      <div class="col-6 d-flex align-items-center justify-content-center p-3">
+        <p class="title-input">My Expense App</p>
+        <!-- <img class="edit-icon" src="imgs/edit.png" alt="edit-icon"> -->
+      </div>
+      <div class="col-3 d-flex align-items-center justify-content-center p-3">
+        <button class="add-expense-button">Add Expense</button>
+        <div class="profile ms-4">
+          <img
+            class="profile-picture"
+            src="imgs/my-photo.png"
+            alt="my-channel-picture"
+          />
         </div>
-        <div class="col-6 d-flex align-items-center justify-content-center p-3">
-            <p class="title-input">My Expense App</p>
-            <!-- <img class="edit-icon" src="imgs/edit.png" alt="edit-icon"> -->
-        </div>
-        <div class="col-3 d-flex align-items-center justify-content-center p-3">
-            <button class="add-expense-button">Add Expense</button>
-                <div class="profile ms-4">
-                    <img class="profile-picture" src="imgs/my-photo.png" alt="my-channel-picture">
-                </div>
-        </div>
+      </div>
     </nav>
     <main class="row">
-        <div class="col-md-7 p-5">
-            <p class="intro-text">Take control of your finances with our <br>intuitive expense management
-                app.<br>Use my
-                expense app to
-                <span id="typing-text">ADD</span>
-            </p>
-            <div class="card-container">
-                <div id="card-1">
-                    <img class="card-image" src="imgs/simple.png">
-                    <p></p>
-                </div>
-                <div id="card-2">
-                    <img class="card-image" src="imgs/budget.png">
-                    <p></p>
-                </div>
-                <div id="card-3">
-                    <img class="card-image" src="imgs/bar-chart.png">
-                    <p></p>
-                </div>
-            </div>
-
-            <button class="start-button" onclick="window.location.href='expense-page.html'">Get Started</button>
-
+      <div class="col-md-7 p-5">
+        <p class="intro-text">
+          Take control of your finances with our <br />intuitive expense
+          management app.<br />Use my expense app to
+          <span id="typing-text">ADD</span>
+        </p>
+        <div class="card-container">
+          <div id="card-1">
+            <img class="card-image" src="imgs/simple.png" />
+            <p></p>
+          </div>
+          <div id="card-2">
+            <img class="card-image" src="imgs/budget.png" />
+            <p></p>
+          </div>
+          <div id="card-3">
+            <img class="card-image" src="imgs/bar-chart.png" />
+            <p></p>
+          </div>
         </div>
-        <div class="col-md-5">
-            <div class="m-5 d-flex align-items-center justify-content-center">
-                <div class="illustration">
-                    <img class="illustration-image image-fluid" src="imgs/illustrate-image.png" alt="illustrate-image">
-                    <!-- Image by storyset on Freepik -->
-                </div>
-            </div>
+
+        <button
+          class="start-button"
+          onclick="window.location.href='expense-page.html'"
+        >
+          Get Started
+        </button>
+      </div>
+      <div class="col-md-5">
+        <div class="m-5 d-flex align-items-center justify-content-center">
+          <div class="illustration">
+            <img
+              class="illustration-image image-fluid"
+              src="imgs/illustrate-image.png"
+              alt="illustrate-image"
+            />
+            <!-- Image by storyset on Freepik -->
+          </div>
         </div>
-        <!-- <section class="chart-section">
+      </div>
+      <!-- <section class="chart-section">
         
         </section> -->
     </main>
     <script src="javascript/homepage.js"></script>
-</body>
-
+  </body>
 </html>
